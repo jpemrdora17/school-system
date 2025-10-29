@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management System</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== SIDEBAR MENU ======== -->
+  <div class="sidebar">
+    <h2>🏫 My School</h2>
+    <ul>
+      <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+      <li><a href="#" onclick="showSection('grades')">Grades</a></li>
+      <li><a href="#" onclick="showSection('schedule')">Schedule</a></li>
+      <li><a href="#" onclick="showSection('subjects')">Subjects</a></li>
+      <li><a href="#" onclick="showSection('assignments')">Assignments</a></li>
+    </ul>
+  </div>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <div class="main-content">
+    
+    <!-- ======== DASHBOARD SECTION ======== -->
+    <div id="dashboard" class="section active">
+      <h1>Welcome, Student!</h1>
+      <p>This is your school dashboard. Use the menu to view your grades, schedule, subjects, and assignments.</p>
+    </div>
+
+    <!-- ======== GRADES SECTION ======== -->
+    <div id="grades" class="section">
+      <h1>📊 Grades</h1>
+      <table>
+        <tr>
+          <th>Subject</th>
+          <th>1st Quarter</th>
+          <th>2nd Quarter</th>
+          <th>Final Grade</th>
+        </tr>
+        <tr>
+          <td>Mathematics</td>
+          <td>90</td>
+          <td>88</td>
+          <td>89</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>85</td>
+          <td>87</td>
+          <td>86</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>92</td>
+          <td>91</td>
+          <td>91.5</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ======== SCHEDULE SECTION ======== -->
+    <div id="schedule" class="section">
+      <h1>🕒 Class Schedule</h1>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Subject</th>
+          <th>Teacher</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>8:00 AM - 9:00 AM</td>
+          <td>Mathematics</td>
+          <td>Mr. Cruz</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM - 10:00 AM</td>
+          <td>Science</td>
+          <td>Ms. Dela Cruz</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>10:00 AM - 11:00 AM</td>
+          <td>English</td>
+          <td>Mr. Santos</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ======== SUBJECTS SECTION ======== -->
+    <div id="subjects" class="section">
+      <h1>📚 Subjects</h1>
+      <ul>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>English</li>
+        <li>Filipino</li>
+        <li>Araling Panlipunan</li>
+        <li>MAPEH</li>
+      </ul>
+    </div>
+
+    <!-- ======== ASSIGNMENTS SECTION ======== -->
+    <div id="assignments" class="section">
+      <h1>📝 Assignments</h1>
+
+      <div class="assignment-card">
+        <h3>Math Homework</h3>
+        <p><strong>Due:</strong> October 30, 2025</p>
+        <p><strong>Description:</strong> Solve problems on page 45, items 1–10.</p>
+      </div>
+
+      <div class="assignment-card">
+        <h3>Science Project</h3>
+        <p><strong>Due:</strong> November 5, 2025</p>
+        <p><strong>Description:</strong> Create a model of the solar system.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
